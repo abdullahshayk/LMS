@@ -1,0 +1,59 @@
+<div style="margin: 20px;">
+
+    <input type="text" 
+    class="question-box"
+     name="description"
+    placeholder="Write question here....."
+    [(ngModel)]="description">  
+
+    <br>
+    
+    <input type="text" 
+    class="input-box"
+    name="alternative"
+   placeholder="option1"
+   [(ngModel)]="alternative[0]">  
+
+
+
+   <br>
+
+    <input type="text" 
+    name="alternative"
+    class="input-box"
+   placeholder="option2"
+   [(ngModel)]="alternative[1]">  
+  
+
+   <br>
+
+    <input type="text" 
+    name="alternative"
+    class="input-box"
+   placeholder="option3"
+   [(ngModel)]="alternative[2]">  
+  
+   <br>
+
+    <input type="text" 
+    name="alternative"
+    class="input-box"
+   placeholder="option4"
+   [(ngModel)]="alternative[3]">  
+
+
+
+    
+
+    
+
+
+
+
+    <br>
+
+    <button 
+    class="btn"
+    (click)="addQuestion()">Add Question</button>
+        
+</div>

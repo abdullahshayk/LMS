@@ -1,0 +1,19 @@
+<div class="quizcontainer" >
+<div  class="quizcontainer2" *ngFor="let quiz of quizs; let i=index">
+ 
+      <div  > 
+          <span  class="question" >Q{{i+1}} {{ quiz.description}}</span>
+
+      <div *ngFor="let option of quiz.alternatives">
+
+        <span class="options" >{{option.text}}</span>
+
+      </div>
+    </div>
+</div>
+
+      </div>
+      
+      
+     
+  
